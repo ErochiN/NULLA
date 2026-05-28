@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -21,15 +22,16 @@ namespace KWIZY
     /// <summary>
     /// Логика взаимодействия для mess.xaml
     /// </summary>
-    /// 
 
-    class Message
-    {
-        public long Id { get; set; }
-        public long FriendId { get; set; }
-        public long UserId { get; set; }
-        public string Messages { get; set; }
-        public DateTime Timestamp { get; set; }
+
+    class Message 
+    { 
+        public long Id { get; set; } 
+        public long FriendId { get; set; } 
+        public long UserId { get; set; } 
+        public string Messages { get; set; } 
+        public DateTime Timestamp { get; set; } 
+        public bool IsMine { get { return UserId == DataUsers.id; } } 
     }
 
     public partial class mess : Page
