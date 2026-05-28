@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="NULLA.png" />
+    <None Remove="Логотип NØ на ярком фонеин.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="NULLA.png" />
+    <Resource Include="Логотип NØ на ярком фонеин.png" />
+  </ItemGroup>
+
+</Project>
